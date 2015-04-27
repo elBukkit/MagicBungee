@@ -1,0 +1,14 @@
+name: MagicBungee
+version: ${project.version}
+authors: [NathanWolf]
+main: com.elmakers.mine.bukkit.bungee.MagicBungeePlugin
+commands:
+    server:
+        description: "Moves a player to another server"
+        usage: "server <player> <server>"
+        permission: Magic.commands.server
+permissions:
+  Magic.commands.server:
+    description: Player may sender players to other servers
+    type: boolean
+    default: op
